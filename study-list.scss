@@ -1,0 +1,164 @@
+$color-text-orange: #F9B233;
+$color-text-green: #A2C28F;
+$avatar-max-height: 45px;
+
+.study-list { 
+    font-family: 'Roboto', sans-serif;
+    .headline-subtitle {
+        color: $color-text-orange;
+        margin-bottom: 1rem;
+        select, .filter-label {
+            font-size: 1rem;
+        }
+        .filter-label {
+            color: #898989;
+            font-weight: normal;
+        }
+        &.underline  {
+            border-bottom: 1px solid #e4e4e4;
+            padding-bottom: 1rem;
+        }
+    }
+    .progress-item {
+        border-radius: 6px;
+        padding: 25px;
+        &.status-progress {
+            background: #FADDAB;
+            .progress {
+                background: #dec498;
+            }
+            .progress-bar {
+                background: $color-text-orange;
+            }
+        }
+        &.status-due {
+            background: #fceeeb;
+            .progress {
+                background: #dfd3d0;
+            }
+            .progress-bar {
+                background: #e27d60;
+            }
+        }
+        &.status-completed {
+            background: #EEF8E9;
+            .progress {
+                background: #d3dccf;
+            }
+            .progress-bar {
+                background: $color-text-green;
+            }
+        }
+        .progress-img {
+            margin-right: 35px;
+        }
+        .progress-title {
+
+            font-size: 21px;
+            font-weight: bold;
+        }
+        .progress-description  {
+            font-size: 15px;
+        }
+    }
+
+    .bdages-lessons-table {
+        width: 100%;
+        border-spacing: 10px;
+        border-collapse: separate;
+        tr {
+            &.badge-row {
+                td {
+                    background: #C7C7C7;
+                    color: #000;
+                    &:first-child {
+                        border-left: 6px solid #5F276A;
+                    }
+                }
+                .progress {
+                    background: #b0b0b0;
+                }
+                .progress-bar {
+                    background: $color-text-orange;
+                }
+            }
+            &.lesson-row {
+                td:first-child {
+                    border-left: 6px solid $color-text-orange;
+                }
+            }
+
+            td {
+                &:first-child {
+                    width: 20%;
+                    min-width: 170px;
+                }
+                font-size: 1.2rem;
+                background: #F6F6F8;
+                padding: 7px 12px;
+                position: relative;
+                &.badge-lesson-status {
+                    color: #fff;
+                    font-weight: bold;
+                }
+                &.status-done {
+                    background: $color-text-green;
+                }
+                &.status-in-progress {
+                    background: $color-text-orange;
+                }
+                &.status-not-started {
+                    background: #1E4B96 ;
+                }
+                &.status-completed-late {
+                    background: #E27D60;
+                }
+        
+                
+            }
+
+            .badge-lesson-img {
+                max-height: 45px;
+            }
+            .badge-lesson-title {
+                font-weight: bold;
+            }
+            .assigned-by-placeholder {
+                text-align: center;
+                background: #619358;
+                color: $color-text-green;
+                border-radius: 50%;
+                width: $avatar-max-height;
+                height: $avatar-max-height;
+                line-height: $avatar-max-height;
+            }
+            .assigned-by-img {
+                max-height: $avatar-max-height;
+                border-radius: 50%;
+            }
+            .effort-required {
+                img {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* GLOBAL */
+.flex-1 {
+    flex: 1;
+}
+.absolute-ellipsis {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin: auto;
+}
+.ellipsis-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
