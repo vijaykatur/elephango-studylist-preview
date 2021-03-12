@@ -151,6 +151,9 @@ $avatar-max-height: 45px;
             }
         }
     }
+    [data-tippy-content] {
+        cursor:pointer;
+    }
 }
 
 /* GLOBAL */
