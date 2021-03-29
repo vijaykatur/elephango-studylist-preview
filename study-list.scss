@@ -94,12 +94,16 @@ $avatar-max-height: 45px;
                     width: 45px;
                     height: 45px;
                 }
+                td {
+                    width: auto!important;
+                }
             }
             &.lesson-row {
                 td:first-child {
                     border-left: 6px solid $color-text-orange;
                 }
             }
+
 
             td {
                 &:first-child {
