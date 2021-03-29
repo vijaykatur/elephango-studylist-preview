@@ -96,6 +96,7 @@ $avatar-max-height: 45px;
                 }
                 td {
                     width: auto!important;
+                    min-width: auto!important;
                 }
             }
             &.lesson-row {
