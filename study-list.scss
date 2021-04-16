@@ -196,7 +196,7 @@ $avatar-max-height: 45px;
 .flex-1 {
     flex: 1;
 }
-.absolute-ellipsis {
+/*.absolute-ellipsis {
     position: absolute;
     left: 0;
     right: 0;
@@ -208,4 +208,8 @@ $avatar-max-height: 45px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}*/
+.ellipsis-text {
+    display: flex;
+    line-height: 1;
 }
