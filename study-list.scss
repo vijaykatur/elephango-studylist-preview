@@ -75,6 +75,12 @@ $avatar-max-height: 45px;
         border-spacing: 10px;
         border-collapse: separate;
         tr {
+            &:hover {
+                td {
+                    background: #ffe38e;
+                }
+                
+            }
             &.badge-row {
                 td {
                     background: #C7C7C7;
@@ -135,7 +141,6 @@ $avatar-max-height: 45px;
                     width: 10%;
                     min-width: 230px;
                 }
-                font-size: 1.2rem;
                 background: #F6F6F8;
                 padding: 7px 12px;
                 position: relative;
