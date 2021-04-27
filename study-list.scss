@@ -220,6 +220,12 @@ $avatar-max-height: 45px;
     align-items: center;
 }
 
+@media (min-width: 576px) {
+    .study-list-mobile-item, .mobile-section-title  {
+        display:none!important;
+    }
+}
+
 @media (max-width: 575.98px) {
     .badges-lessons {
         display: none;
